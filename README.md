@@ -5,6 +5,8 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 **Open source contributions**
 
 *Active:*
+- [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `open`
+- [DalgoT4D/webapp#1705](https://github.com/DalgoT4D/webapp/pull/1705) — fix: drop empty reader_options from source config `open`
 - [sktime/sktime-mcp#114](https://github.com/sktime/sktime-mcp/pull/114) — seasonality detection + structural break diagnostics for sktime's MCP layer `open`
 - [sktime/sktime#9846](https://github.com/sktime/sktime/issues/9846) — proposed agentic model selection benchmark `open`
 - [shap/shap#4436](https://github.com/shap/shap/pull/4436) — type annotations for SHAP explainability library `open`
