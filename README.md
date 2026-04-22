@@ -14,6 +14,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [python-poetry/poetry#10835](https://github.com/python-poetry/poetry/pull/10835) — docs: VCS ignore interaction with packages config `merged`
 - [tattle-made/feluda#588](https://github.com/tattle-made/feluda/pull/588) — UMAP dimension reduction `merged`
 - [tattle-made/feluda#589](https://github.com/tattle-made/feluda/pull/589) — unit tests for core operator `merged`
 - [Noethys/Noethys#84](https://github.com/Noethys/Noethys/pull/84) — SQL injection vulnerability fix `fixes adopted manually`
