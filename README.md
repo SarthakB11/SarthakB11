@@ -6,8 +6,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 
 *Active:*
 - [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag `open`
-- [PrefectHQ/fastmcp#4101](https://github.com/PrefectHQ/fastmcp/pull/4101) — fix(tool_transform): hoist $defs to schema root when ArgTransform introduces them `open`
-- [PrefectHQ/fastmcp#4100](https://github.com/PrefectHQ/fastmcp/pull/4100) — fix(auth): silence authlib.jose DeprecationWarning at JWT import `open`
+- [ag2ai/faststream#2858](https://github.com/ag2ai/faststream/pull/2858) — feat(cli): pluggable yaml parser + per-version validation errors for docs serve `open`
 - [pepperoni21/ollama-rs#336](https://github.com/pepperoni21/ollama-rs/pull/336) — feat: add OllamaBuilder; deprecate host+port constructors `open`
 - [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `open`
 - [DalgoT4D/webapp#1705](https://github.com/DalgoT4D/webapp/pull/1705) — fix: drop empty reader_options from source config `open`
@@ -20,6 +19,8 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [PrefectHQ/fastmcp#4101](https://github.com/PrefectHQ/fastmcp/pull/4101) — fix(tool_transform): hoist $defs to schema root when ArgTransform introduces them `merged`
+- [PrefectHQ/fastmcp#4100](https://github.com/PrefectHQ/fastmcp/pull/4100) — fix(auth): silence authlib.jose DeprecationWarning at JWT import `merged`
 - [ag2ai/ag2#2782](https://github.com/ag2ai/ag2/pull/2782) — Fix LLMConfig for 5 notebooks (6th in the migration series) `merged`
 - [aaif-goose/goose#9035](https://github.com/aaif-goose/goose/pull/9035) — fix(openai): accept null tool_call arguments in streaming chunks `merged`
 - [GitoxideLabs/gitoxide#2575](https://github.com/GitoxideLabs/gitoxide/pull/2575) — document why each fixture archive is .gitignored `merged`
