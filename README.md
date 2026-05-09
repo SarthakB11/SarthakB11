@@ -5,6 +5,15 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 **Open source contributions**
 
 *Active:*
+- [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
+- [ag2ai/faststream#2864](https://github.com/ag2ai/faststream/pull/2864) — feat: re-export BrokerUsecase from top-level package `open`
+- [hynek/structlog#810](https://github.com/hynek/structlog/pull/810) — stdlib: don't clear LogRecord.args before ProcessorFormatter processors run `open`
+- [pepperoni21/ollama-rs#337](https://github.com/pepperoni21/ollama-rs/pull/337) — Relax Tool::call future bound to Send `open`
+- [aaif-goose/goose#9123](https://github.com/aaif-goose/goose/pull/9123) — fix: omit max_tokens for OpenAI-compatible requests when unset `open`
+- [PrefectHQ/fastmcp#4118](https://github.com/PrefectHQ/fastmcp/pull/4118) — fix(http): terminate active streamable-HTTP transports before lifespan shutdown `open`
+- [ag2ai/ag2#2794](https://github.com/ag2ai/ag2/pull/2794) — fix: align optional-extras pins so uv sync resolves `open`
+- [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
+- [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
 - [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag `open`
 - [ag2ai/faststream#2858](https://github.com/ag2ai/faststream/pull/2858) — feat(cli): pluggable yaml parser + per-version validation errors for docs serve `open`
 - [pepperoni21/ollama-rs#336](https://github.com/pepperoni21/ollama-rs/pull/336) — feat: add OllamaBuilder; deprecate host+port constructors `open`
