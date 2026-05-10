@@ -7,10 +7,8 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 *Active:*
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
 - [ag2ai/faststream#2864](https://github.com/ag2ai/faststream/pull/2864) — feat: re-export BrokerUsecase from top-level package `open`
-- [hynek/structlog#810](https://github.com/hynek/structlog/pull/810) — stdlib: don't clear LogRecord.args before ProcessorFormatter processors run `open`
 - [pepperoni21/ollama-rs#337](https://github.com/pepperoni21/ollama-rs/pull/337) — Relax Tool::call future bound to Send `open`
 - [aaif-goose/goose#9123](https://github.com/aaif-goose/goose/pull/9123) — fix: omit max_tokens for OpenAI-compatible requests when unset `open`
-- [PrefectHQ/fastmcp#4118](https://github.com/PrefectHQ/fastmcp/pull/4118) — fix(http): terminate active streamable-HTTP transports before lifespan shutdown `open`
 - [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
 - [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
 - [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag `open`
@@ -27,6 +25,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [PrefectHQ/fastmcp#4118](https://github.com/PrefectHQ/fastmcp/pull/4118) — fix(http): terminate active streamable-HTTP transports before lifespan shutdown `merged`
 - [ag2ai/ag2#2794](https://github.com/ag2ai/ag2/pull/2794) — fix: align optional-extras pins so uv sync resolves `merged`
 - [PrefectHQ/fastmcp#4101](https://github.com/PrefectHQ/fastmcp/pull/4101) — fix(tool_transform): hoist $defs to schema root when ArgTransform introduces them `merged`
 - [PrefectHQ/fastmcp#4100](https://github.com/PrefectHQ/fastmcp/pull/4100) — fix(auth): silence authlib.jose DeprecationWarning at JWT import `merged`
@@ -40,6 +39,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [0xPlaygrounds/rig#1556](https://github.com/0xPlaygrounds/rig/issues/1556) — Chat trait `&mut Vec<Message>` round-trip (issue closed by maintainer's #1733) `fix adopted in maintainer's PR`
 
 *Past contributions:*
+- [hynek/structlog#810](https://github.com/hynek/structlog/pull/810) — LogRecord.args timing in ProcessorFormatter `closed — supported path is pass_foreign_args=True`
 - [avantifellows/portal-backend#73](https://github.com/avantifellows/portal-backend/pull/73) — fix create-access-token route bug `closed — not reviewed`
 - [proteanhq/protean#504](https://github.com/proteanhq/protean/pull/504) — FastAPI server integration `closed — superseded by maintainer's version`
 
