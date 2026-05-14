@@ -8,7 +8,6 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
 - [ag2ai/faststream#2864](https://github.com/ag2ai/faststream/pull/2864) — feat: re-export BrokerUsecase from top-level package `open`
 - [pepperoni21/ollama-rs#337](https://github.com/pepperoni21/ollama-rs/pull/337) — Relax Tool::call future bound to Send `open`
-- [aaif-goose/goose#9123](https://github.com/aaif-goose/goose/pull/9123) — fix: omit max_tokens for OpenAI-compatible requests when unset `open`
 - [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
 - [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
 - [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag `open`
@@ -25,6 +24,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [aaif-goose/goose#9123](https://github.com/aaif-goose/goose/pull/9123) — fix: omit max_tokens for OpenAI-compatible requests when unset `merged`
 - [PrefectHQ/fastmcp#4118](https://github.com/PrefectHQ/fastmcp/pull/4118) — fix(http): terminate active streamable-HTTP transports before lifespan shutdown `merged`
 - [ag2ai/ag2#2794](https://github.com/ag2ai/ag2/pull/2794) — fix: align optional-extras pins so uv sync resolves `merged`
 - [PrefectHQ/fastmcp#4101](https://github.com/PrefectHQ/fastmcp/pull/4101) — fix(tool_transform): hoist $defs to schema root when ArgTransform introduces them `merged`
