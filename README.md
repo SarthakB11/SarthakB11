@@ -6,7 +6,6 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 
 *Active:*
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
-- [ag2ai/faststream#2864](https://github.com/ag2ai/faststream/pull/2864) — feat: re-export BrokerUsecase from top-level package `open`
 - [pepperoni21/ollama-rs#337](https://github.com/pepperoni21/ollama-rs/pull/337) — Relax Tool::call future bound to Send `open`
 - [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
 - [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
@@ -39,6 +38,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [0xPlaygrounds/rig#1556](https://github.com/0xPlaygrounds/rig/issues/1556) — Chat trait `&mut Vec<Message>` round-trip (issue closed by maintainer's #1733) `fix adopted in maintainer's PR`
 
 *Past contributions:*
+- [ag2ai/faststream#2864](https://github.com/ag2ai/faststream/pull/2864) — re-export BrokerUsecase from top-level package `closed by maintainer`
 - [hynek/structlog#810](https://github.com/hynek/structlog/pull/810) — LogRecord.args timing in ProcessorFormatter `closed — supported path is pass_foreign_args=True`
 - [avantifellows/portal-backend#73](https://github.com/avantifellows/portal-backend/pull/73) — fix create-access-token route bug `closed — not reviewed`
 - [proteanhq/protean#504](https://github.com/proteanhq/protean/pull/504) — FastAPI server integration `closed — superseded by maintainer's version`
