@@ -5,12 +5,20 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 **Open source contributions**
 
 *Active:*
+- [python-poetry/poetry#10908](https://github.com/python-poetry/poetry/pull/10908) — fix(add): include pyproject.toml path in "already present" message `open`
+- [python-poetry/poetry#10909](https://github.com/python-poetry/poetry/pull/10909) — fix(init): validate version constraint in interactive prompt `open`
+- [GitoxideLabs/gitoxide#2606](https://github.com/GitoxideLabs/gitoxide/pull/2606) — gix-url: accept `impl Into<&BStr>` in `parse` `open`
+- [GitoxideLabs/gitoxide#2607](https://github.com/GitoxideLabs/gitoxide/pull/2607) — gix-command: pass `sh` (not `--`) as `$0` to `sh -c` `open`
+- [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
+- [PrefectHQ/fastmcp#4171](https://github.com/PrefectHQ/fastmcp/pull/4171) — fix(event_store): treat concurrent eviction as idempotent `open`
+- [PrefectHQ/fastmcp#4172](https://github.com/PrefectHQ/fastmcp/pull/4172) — fix(server): wrap pydantic ValidationError as fastmcp ValidationError `open`
+- [ag2ai/ag2#2872](https://github.com/ag2ai/ag2/pull/2872) — docs: add Gemini and Azure OpenAI tabs to Quick Start `open`
+- [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
 - [pepperoni21/ollama-rs#337](https://github.com/pepperoni21/ollama-rs/pull/337) — Relax Tool::call future bound to Send `open`
 - [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
 - [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
 - [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag `open`
-- [ag2ai/faststream#2858](https://github.com/ag2ai/faststream/pull/2858) — feat(cli): pluggable yaml parser + per-version validation errors for docs serve `open`
 - [pepperoni21/ollama-rs#336](https://github.com/pepperoni21/ollama-rs/pull/336) — feat: add OllamaBuilder; deprecate host+port constructors `open`
 - [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `open`
 - [DalgoT4D/webapp#1705](https://github.com/DalgoT4D/webapp/pull/1705) — fix: drop empty reader_options from source config `open`
