@@ -10,8 +10,6 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [GitoxideLabs/gitoxide#2606](https://github.com/GitoxideLabs/gitoxide/pull/2606) — gix-url: accept `impl Into<&BStr>` in `parse` `open`
 - [GitoxideLabs/gitoxide#2607](https://github.com/GitoxideLabs/gitoxide/pull/2607) — gix-command: pass `sh` (not `--`) as `$0` to `sh -c` `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
-- [PrefectHQ/fastmcp#4171](https://github.com/PrefectHQ/fastmcp/pull/4171) — fix(event_store): treat concurrent eviction as idempotent `open`
-- [PrefectHQ/fastmcp#4172](https://github.com/PrefectHQ/fastmcp/pull/4172) — fix(server): wrap pydantic ValidationError as fastmcp ValidationError `open`
 - [ag2ai/ag2#2872](https://github.com/ag2ai/ag2/pull/2872) — docs: add Gemini and Azure OpenAI tabs to Quick Start `open`
 - [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
@@ -46,6 +44,9 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [0xPlaygrounds/rig#1556](https://github.com/0xPlaygrounds/rig/issues/1556) — Chat trait `&mut Vec<Message>` round-trip (issue closed by maintainer's #1733) `fix adopted in maintainer's PR`
 
 *Past contributions:*
+- [PrefectHQ/fastmcp#4172](https://github.com/PrefectHQ/fastmcp/pull/4172) — wrap pydantic ValidationError as fastmcp ValidationError `closed by maintainer — discussion-on-issue required first`
+- [PrefectHQ/fastmcp#4171](https://github.com/PrefectHQ/fastmcp/pull/4171) — event_store concurrent eviction guard `closed by maintainer — preferred fix is upstream in py-key-value-aio`
+- [ag2ai/faststream#2858](https://github.com/ag2ai/faststream/pull/2858) — feat(cli): pluggable yaml parser for docs serve `closed by maintainer — over-scoped (see #2874 redo)`
 - [ag2ai/faststream#2864](https://github.com/ag2ai/faststream/pull/2864) — re-export BrokerUsecase from top-level package `closed by maintainer`
 - [hynek/structlog#810](https://github.com/hynek/structlog/pull/810) — LogRecord.args timing in ProcessorFormatter `closed — supported path is pass_foreign_args=True`
 - [avantifellows/portal-backend#73](https://github.com/avantifellows/portal-backend/pull/73) — fix create-access-token route bug `closed — not reviewed`
