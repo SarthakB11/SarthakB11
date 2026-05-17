@@ -7,7 +7,6 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 *Active:*
 - [python-poetry/poetry#10908](https://github.com/python-poetry/poetry/pull/10908) — fix(add): include pyproject.toml path in "already present" message `open`
 - [python-poetry/poetry#10909](https://github.com/python-poetry/poetry/pull/10909) — fix(init): validate version constraint in interactive prompt `open`
-- [GitoxideLabs/gitoxide#2606](https://github.com/GitoxideLabs/gitoxide/pull/2606) — gix-url: accept `impl Into<&BStr>` in `parse` `open`
 - [GitoxideLabs/gitoxide#2607](https://github.com/GitoxideLabs/gitoxide/pull/2607) — gix-command: pass `sh` (not `--`) as `$0` to `sh -c` `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
 - [ag2ai/ag2#2872](https://github.com/ag2ai/ag2/pull/2872) — docs: add Gemini and Azure OpenAI tabs to Quick Start `open`
@@ -44,6 +43,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [0xPlaygrounds/rig#1556](https://github.com/0xPlaygrounds/rig/issues/1556) — Chat trait `&mut Vec<Message>` round-trip (issue closed by maintainer's #1733) `fix adopted in maintainer's PR`
 
 *Past contributions:*
+- [GitoxideLabs/gitoxide#2606](https://github.com/GitoxideLabs/gitoxide/pull/2606) — gix-url: accept `impl Into<&BStr>` in `parse` `closed by author — signature widening broke 34 downstream .into() callers; awaiting maintainer guidance on preferred shape`
 - [PrefectHQ/fastmcp#4172](https://github.com/PrefectHQ/fastmcp/pull/4172) — wrap pydantic ValidationError as fastmcp ValidationError `closed by maintainer — discussion-on-issue required first`
 - [PrefectHQ/fastmcp#4171](https://github.com/PrefectHQ/fastmcp/pull/4171) — event_store concurrent eviction guard `closed by maintainer — preferred fix is upstream in py-key-value-aio`
 - [ag2ai/faststream#2858](https://github.com/ag2ai/faststream/pull/2858) — feat(cli): pluggable yaml parser for docs serve `closed by maintainer — over-scoped (see #2874 redo)`
