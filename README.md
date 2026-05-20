@@ -9,7 +9,6 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [python-poetry/poetry#10909](https://github.com/python-poetry/poetry/pull/10909) — fix(init): validate version constraint in interactive prompt `open`
 - [GitoxideLabs/gitoxide#2607](https://github.com/GitoxideLabs/gitoxide/pull/2607) — gix-command: pass `sh` (not `--`) as `$0` to `sh -c` `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
-- [ag2ai/ag2#2872](https://github.com/ag2ai/ag2/pull/2872) — docs: add Gemini and Azure OpenAI tabs to Quick Start `open`
 - [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
 - [pepperoni21/ollama-rs#337](https://github.com/pepperoni21/ollama-rs/pull/337) — Relax Tool::call future bound to Send `open`
@@ -28,6 +27,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [ag2ai/ag2#2872](https://github.com/ag2ai/ag2/pull/2872) — docs: add Gemini and Azure OpenAI tabs to Quick Start `merged`
 - [aaif-goose/goose#9123](https://github.com/aaif-goose/goose/pull/9123) — fix: omit max_tokens for OpenAI-compatible requests when unset `merged`
 - [PrefectHQ/fastmcp#4118](https://github.com/PrefectHQ/fastmcp/pull/4118) — fix(http): terminate active streamable-HTTP transports before lifespan shutdown `merged`
 - [ag2ai/ag2#2794](https://github.com/ag2ai/ag2/pull/2794) — fix: align optional-extras pins so uv sync resolves `merged`
