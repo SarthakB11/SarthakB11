@@ -5,6 +5,10 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 **Open source contributions**
 
 *Active:*
+- Kuadrant/mcp-gateway — MCP gateway concurrency hardening in `internal/`: [#923](https://github.com/Kuadrant/mcp-gateway/pull/923) `fix(broker)` take `RLock` in `findServerByName` and use `MCPName()` in log, [#924](https://github.com/Kuadrant/mcp-gateway/pull/924) `fix(session)` bound `JWTManager.Terminate` cache deletion with a 5s timeout (reviewer review: "Good fix"), [#925](https://github.com/Kuadrant/mcp-gateway/pull/925) `fix(mcp-router)` make `ExtProcServer.RoutingConfig` swap race-free with `atomic.Pointer` `3 PRs open`
+- meshery/meshery — `utils.IsClosed` cleanup chain in `server/models`: [#19572](https://github.com/meshery/meshery/pull/19572) `[server]` fix `Broadcast` races + value-copy clobber + tests, [#19580](https://github.com/meshery/meshery/pull/19580) replace remaining `IsClosed` gates with non-blocking sends, [#19585](https://github.com/meshery/meshery/pull/19585) remove the helper itself, [#19643](https://github.com/meshery/meshery/pull/19643) init subscriber slices with `len=0` `4 PRs open`
+- [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions `open`
+- kagent-dev/kagent — in-flight follow-ups to #1787/#1814: [#1786](https://github.com/kagent-dev/kagent/pull/1786), [#1791](https://github.com/kagent-dev/kagent/pull/1791), [#1825](https://github.com/kagent-dev/kagent/pull/1825) `3 PRs open`
 - [GitoxideLabs/gitoxide#2607](https://github.com/GitoxideLabs/gitoxide/pull/2607) — gix-command: pass `sh` (not `--`) as `$0` to `sh -c` `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
 - [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
@@ -28,6 +32,8 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [kagent-dev/kagent#1814](https://github.com/kagent-dev/kagent/pull/1814) — fix(cli): correct MCP secrets sync apply behavior and thread cobra ctx `merged`
+- [kagent-dev/kagent#1787](https://github.com/kagent-dev/kagent/pull/1787) — fix(app): wire signal-aware context through controller startup `merged`
 - [shap/shap#4436](https://github.com/shap/shap/pull/4436) — type annotations for `_random` (first step of [#3730](https://github.com/shap/shap/issues/3730) `check_untyped_defs` migration) `merged`
 - [shap/shap#4480](https://github.com/shap/shap/issues/4480) — filed: `type(x) is tuple` anti-pattern in gradient/deep explainers and partial_dependence (fixed via @neha222222's PR #4508, merged May 27) `fix adopted in maintainer-merged PR`
 - [python-poetry/poetry#10908](https://github.com/python-poetry/poetry/pull/10908) — fix(add): include pyproject.toml path in "already present" message `merged`
