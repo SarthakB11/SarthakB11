@@ -17,14 +17,19 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `open`
 - [DalgoT4D/webapp#1705](https://github.com/DalgoT4D/webapp/pull/1705) — fix: drop empty reader_options from source config `open`
 - [sktime/sktime-mcp#114](https://github.com/sktime/sktime-mcp/pull/114) — seasonality detection + structural break diagnostics for sktime's MCP layer `open`
+- [sktime/sktime-mcp#273](https://github.com/sktime/sktime-mcp/pull/273) — cap MCP data-handle accumulation with LRU eviction (fixes #191) `open`
+- [sktime/sktime-mcp#347](https://github.com/sktime/sktime-mcp/pull/347) — map NaN/Inf to null in `sanitize_for_json` to keep tool responses JSON-safe `open`
+- [sktime/sktime#9876](https://github.com/sktime/sktime/issues/9876) — proposed MCP-native agentic estimator for forecasting pipeline selection `open`
 - [sktime/sktime#9846](https://github.com/sktime/sktime/issues/9846) — proposed agentic model selection benchmark `open`
-- [shap/shap#4436](https://github.com/shap/shap/pull/4436) — type annotations for SHAP explainability library `open`
+- shap/shap — type-annotation migration for [#3730](https://github.com/shap/shap/issues/3730) (`check_untyped_defs`): [#4445](https://github.com/shap/shap/pull/4445) `tf_utils` with `TFModel` Protocol, [#4760](https://github.com/shap/shap/pull/4760) `plots/_force`, [#4761](https://github.com/shap/shap/pull/4761) `maskers/_image`, [#4772](https://github.com/shap/shap/pull/4772) `plots/_force_matplotlib` `4 PRs open`
 - [pgmpy/pgmpy#2225](https://github.com/pgmpy/pgmpy/pull/2225) — timeseries conversion utilities bridging pgmpy ↔ sktime `open`
 - [DalgoT4D/DDP_backend#1037](https://github.com/DalgoT4D/DDP_backend/pull/1037) — Airbyte integration test suite `open`
 - [PlanetRead/Video-Watch-Timer#6](https://github.com/PlanetRead/Video-Watch-Timer/pull/6) — dark mode theme support `open`
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [shap/shap#4436](https://github.com/shap/shap/pull/4436) — type annotations for `_random` (first step of [#3730](https://github.com/shap/shap/issues/3730) `check_untyped_defs` migration) `merged`
+- [shap/shap#4480](https://github.com/shap/shap/issues/4480) — filed: `type(x) is tuple` anti-pattern in gradient/deep explainers and partial_dependence (fixed via @neha222222's PR #4508, merged May 27) `fix adopted in maintainer-merged PR`
 - [python-poetry/poetry#10908](https://github.com/python-poetry/poetry/pull/10908) — fix(add): include pyproject.toml path in "already present" message `merged`
 - [python-poetry/poetry#10909](https://github.com/python-poetry/poetry/pull/10909) — fix(init): validate version constraint in interactive prompt `merged`
 - [ag2ai/ag2#2872](https://github.com/ag2ai/ag2/pull/2872) — docs: add Gemini and Azure OpenAI tabs to Quick Start `merged`
