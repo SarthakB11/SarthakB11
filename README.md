@@ -9,7 +9,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - meshery/meshery — `utils.IsClosed` cleanup chain in `server/models`: [#19572](https://github.com/meshery/meshery/pull/19572) `[server]` fix `Broadcast` races + value-copy clobber + tests, [#19580](https://github.com/meshery/meshery/pull/19580) replace remaining `IsClosed` gates with non-blocking sends, [#19585](https://github.com/meshery/meshery/pull/19585) remove the helper itself, [#19643](https://github.com/meshery/meshery/pull/19643) init subscriber slices with `len=0` `4 PRs open`
 - [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions `open`
 - kagent-dev/kagent — in-flight follow-ups to #1787/#1814: [#1786](https://github.com/kagent-dev/kagent/pull/1786), [#1791](https://github.com/kagent-dev/kagent/pull/1791), [#1825](https://github.com/kagent-dev/kagent/pull/1825) `3 PRs open`
-- [GitoxideLabs/gitoxide#2607](https://github.com/GitoxideLabs/gitoxide/pull/2607) — gix-command: pass `sh` (not `--`) as `$0` to `sh -c` `open`
+- [aaif-goose/goose#9473](https://github.com/aaif-goose/goose/pull/9473) — feat(server): paginate messages in GET /sessions/{session_id} (limit + offset, openapi + TS client regen) `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
 - [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
@@ -46,6 +46,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [PrefectHQ/fastmcp#4100](https://github.com/PrefectHQ/fastmcp/pull/4100) — fix(auth): silence authlib.jose DeprecationWarning at JWT import `merged`
 - [ag2ai/ag2#2782](https://github.com/ag2ai/ag2/pull/2782) — Fix LLMConfig for 5 notebooks (6th in the migration series) `merged`
 - [aaif-goose/goose#9035](https://github.com/aaif-goose/goose/pull/9035) — fix(openai): accept null tool_call arguments in streaming chunks `merged`
+- [GitoxideLabs/gitoxide#2607](https://github.com/GitoxideLabs/gitoxide/pull/2607) — gix-command: pass shell name (not `--`) as `$0` to `<shell> -c` `merged`
 - [GitoxideLabs/gitoxide#2575](https://github.com/GitoxideLabs/gitoxide/pull/2575) — document why each fixture archive is .gitignored `merged`
 - [python-poetry/poetry#10835](https://github.com/python-poetry/poetry/pull/10835) — docs: VCS ignore interaction with packages config `merged`
 - [tattle-made/feluda#588](https://github.com/tattle-made/feluda/pull/588) — UMAP dimension reduction `merged`
