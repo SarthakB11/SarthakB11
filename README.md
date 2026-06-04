@@ -8,20 +8,17 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - Kuadrant/mcp-gateway — MCP gateway concurrency hardening in `internal/`: [#923](https://github.com/Kuadrant/mcp-gateway/pull/923) `fix(broker)` take `RLock` in `findServerByName` and use `MCPName()` in log, [#924](https://github.com/Kuadrant/mcp-gateway/pull/924) `fix(session)` bound `JWTManager.Terminate` cache deletion with a 5s timeout (reviewer review: "Good fix"), [#925](https://github.com/Kuadrant/mcp-gateway/pull/925) `fix(mcp-router)` make `ExtProcServer.RoutingConfig` swap race-free with `atomic.Pointer` `3 PRs open`
 - meshery/meshery — `utils.IsClosed` cleanup chain in `server/models`: [#19572](https://github.com/meshery/meshery/pull/19572) `[server]` fix `Broadcast` races + value-copy clobber + tests, [#19580](https://github.com/meshery/meshery/pull/19580) replace remaining `IsClosed` gates with non-blocking sends, [#19585](https://github.com/meshery/meshery/pull/19585) remove the helper itself, [#19643](https://github.com/meshery/meshery/pull/19643) init subscriber slices with `len=0` `4 PRs open`
 - [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions `open`
-- kagent-dev/kagent — in-flight follow-ups to #1787/#1814: [#1786](https://github.com/kagent-dev/kagent/pull/1786), [#1791](https://github.com/kagent-dev/kagent/pull/1791), [#1825](https://github.com/kagent-dev/kagent/pull/1825) `3 PRs open`
+- kagent-dev/kagent — in-flight follow-ups to #1787/#1814: [#1786](https://github.com/kagent-dev/kagent/pull/1786), [#1791](https://github.com/kagent-dev/kagent/pull/1791) `2 PRs open`
 - [aaif-goose/goose#9473](https://github.com/aaif-goose/goose/pull/9473) — feat(server): paginate messages in GET /sessions/{session_id} (limit + offset, openapi + TS client regen) `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
 - [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
-- [pepperoni21/ollama-rs#337](https://github.com/pepperoni21/ollama-rs/pull/337) — Relax Tool::call future bound to Send `open`
 - [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
 - [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
 - [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag `open`
-- [pepperoni21/ollama-rs#336](https://github.com/pepperoni21/ollama-rs/pull/336) — feat: add OllamaBuilder; deprecate host+port constructors `open`
 - [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `open`
 - [DalgoT4D/webapp#1705](https://github.com/DalgoT4D/webapp/pull/1705) — fix: drop empty reader_options from source config `open`
 - [sktime/sktime-mcp#114](https://github.com/sktime/sktime-mcp/pull/114) — seasonality detection + structural break diagnostics for sktime's MCP layer `open`
-- [sktime/sktime-mcp#273](https://github.com/sktime/sktime-mcp/pull/273) — cap MCP data-handle accumulation with LRU eviction (fixes #191) `open`
 - [sktime/sktime-mcp#347](https://github.com/sktime/sktime-mcp/pull/347) — map NaN/Inf to null in `sanitize_for_json` to keep tool responses JSON-safe `open`
 - [sktime/sktime#9876](https://github.com/sktime/sktime/issues/9876) — proposed MCP-native agentic estimator for forecasting pipeline selection `open`
 - [sktime/sktime#9846](https://github.com/sktime/sktime/issues/9846) — proposed agentic model selection benchmark `open`
@@ -32,6 +29,9 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [pepperoni21/ollama-rs#336](https://github.com/pepperoni21/ollama-rs/pull/336) — feat: add OllamaBuilder; deprecate host+port constructors `merged`
+- [pepperoni21/ollama-rs#337](https://github.com/pepperoni21/ollama-rs/pull/337) — Relax Tool::call future bound to Send `merged`
+- [sktime/sktime-mcp#273](https://github.com/sktime/sktime-mcp/pull/273) — cap MCP data-handle accumulation with LRU eviction (fixes #191) `merged`
 - [kagent-dev/kagent#1814](https://github.com/kagent-dev/kagent/pull/1814) — fix(cli): correct MCP secrets sync apply behavior and thread cobra ctx `merged`
 - [kagent-dev/kagent#1787](https://github.com/kagent-dev/kagent/pull/1787) — fix(app): wire signal-aware context through controller startup `merged`
 - [shap/shap#4436](https://github.com/shap/shap/pull/4436) — type annotations for `_random` (first step of [#3730](https://github.com/shap/shap/issues/3730) `check_untyped_defs` migration) `merged`
@@ -55,6 +55,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [0xPlaygrounds/rig#1556](https://github.com/0xPlaygrounds/rig/issues/1556) — Chat trait `&mut Vec<Message>` round-trip (issue closed by maintainer's #1733) `fix adopted in maintainer's PR`
 
 *Past contributions:*
+- [kagent-dev/kagent#1825](https://github.com/kagent-dev/kagent/pull/1825) — test(migrations): add data-preserving upgrade test for workload_type backfill `closed-stale by github-actions after 20 days inactivity`
 - [GitoxideLabs/gitoxide#2606](https://github.com/GitoxideLabs/gitoxide/pull/2606) — gix-url: accept `impl Into<&BStr>` in `parse` `closed by author — signature widening broke 34 downstream .into() callers; awaiting maintainer guidance on preferred shape`
 - [PrefectHQ/fastmcp#4172](https://github.com/PrefectHQ/fastmcp/pull/4172) — wrap pydantic ValidationError as fastmcp ValidationError `closed by maintainer — discussion-on-issue required first`
 - [PrefectHQ/fastmcp#4171](https://github.com/PrefectHQ/fastmcp/pull/4171) — event_store concurrent eviction guard `closed by maintainer — preferred fix is upstream in py-key-value-aio`
