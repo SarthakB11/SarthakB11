@@ -8,7 +8,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - Kuadrant/mcp-gateway — MCP gateway concurrency hardening in `internal/`: [#923](https://github.com/Kuadrant/mcp-gateway/pull/923) `fix(broker)` take `RLock` in `findServerByName` and use `MCPName()` in log, [#924](https://github.com/Kuadrant/mcp-gateway/pull/924) `fix(session)` bound `JWTManager.Terminate` cache deletion with a 5s timeout (reviewer review: "Good fix"), [#925](https://github.com/Kuadrant/mcp-gateway/pull/925) `fix(mcp-router)` make `ExtProcServer.RoutingConfig` swap race-free with `atomic.Pointer` `3 PRs open`
 - meshery/meshery — `utils.IsClosed` cleanup chain in `server/models`: [#19572](https://github.com/meshery/meshery/pull/19572) `[server]` fix `Broadcast` races + value-copy clobber + tests, [#19580](https://github.com/meshery/meshery/pull/19580) replace remaining `IsClosed` gates with non-blocking sends, [#19585](https://github.com/meshery/meshery/pull/19585) remove the helper itself, [#19643](https://github.com/meshery/meshery/pull/19643) init subscriber slices with `len=0` `4 PRs open`
 - [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions `open`
-- kagent-dev/kagent — in-flight follow-ups to #1787/#1814: [#1786](https://github.com/kagent-dev/kagent/pull/1786), [#1791](https://github.com/kagent-dev/kagent/pull/1791) `2 PRs open`
+- [kagent-dev/kagent#1786](https://github.com/kagent-dev/kagent/pull/1786) — fix(skills-init): install openssh-client so ssh-keyscan is available `open`
 - [aaif-goose/goose#9473](https://github.com/aaif-goose/goose/pull/9473) — feat(server): paginate messages in GET /sessions/{session_id} (limit + offset, openapi + TS client regen) `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
 - [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
@@ -29,6 +29,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [kagent-dev/kagent#1791](https://github.com/kagent-dev/kagent/pull/1791) — fix(controller): return error instead of panicking on unknown auth mode `merged`
 - [pepperoni21/ollama-rs#336](https://github.com/pepperoni21/ollama-rs/pull/336) — feat: add OllamaBuilder; deprecate host+port constructors `merged`
 - [pepperoni21/ollama-rs#337](https://github.com/pepperoni21/ollama-rs/pull/337) — Relax Tool::call future bound to Send `merged`
 - [sktime/sktime-mcp#273](https://github.com/sktime/sktime-mcp/pull/273) — cap MCP data-handle accumulation with LRU eviction (fixes #191) `merged`
