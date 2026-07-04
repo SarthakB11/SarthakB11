@@ -10,6 +10,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions `open`
 - [kagent-dev/kagent#1786](https://github.com/kagent-dev/kagent/pull/1786) — fix(skills-init): install openssh-client so ssh-keyscan is available `open`
 - [kagent-dev/kagent#2134](https://github.com/kagent-dev/kagent/pull/2134) — fix(helm): unpin `runAsUser`/`runAsGroup` in `grafana-mcp` and `querydoc` subcharts so charts install under OpenShift restricted-v2 SCC (fixes #2079) `open`
+- [dapr/durabletask-go#113](https://github.com/dapr/durabletask-go/pull/113) — fix: reset `ParentTraceContext` on `ContinueAsNew` to bound per-generation traces (mints fresh W3C root when traced, honors opt-out when not; refs dapr/dapr#10064 with maintainer greenlight) `open`
 - [aaif-goose/goose#9473](https://github.com/aaif-goose/goose/pull/9473) — feat(server): paginate messages in GET /sessions/{session_id} (limit + offset, openapi + TS client regen) `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
 - [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
