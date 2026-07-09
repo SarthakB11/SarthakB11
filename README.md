@@ -5,16 +5,13 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 **Open source contributions**
 
 *Active:*
-- [Kuadrant/mcp-gateway#925](https://github.com/Kuadrant/mcp-gateway/pull/925) — `fix(mcp-router)` make `ExtProcServer.RoutingConfig` swap race-free with `atomic.Pointer` `open`
 - meshery/meshery — `utils.IsClosed` cleanup chain in `server/models`: [#19572](https://github.com/meshery/meshery/pull/19572) `[server]` fix `Broadcast` races + value-copy clobber + tests, [#19580](https://github.com/meshery/meshery/pull/19580) replace remaining `IsClosed` gates with non-blocking sends, [#19585](https://github.com/meshery/meshery/pull/19585) remove the helper itself, [#19643](https://github.com/meshery/meshery/pull/19643) init subscriber slices with `len=0` `4 PRs open`
 - [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions `open`
-- [kagent-dev/kagent#1786](https://github.com/kagent-dev/kagent/pull/1786) — fix(skills-init): install openssh-client so ssh-keyscan is available `open`
 - [kagent-dev/kagent#2134](https://github.com/kagent-dev/kagent/pull/2134) — fix(helm): unpin `runAsUser`/`runAsGroup` in `grafana-mcp` and `querydoc` subcharts so charts install under OpenShift restricted-v2 SCC (fixes #2079) `open`
 - [dapr/durabletask-go#113](https://github.com/dapr/durabletask-go/pull/113) — fix: reset `ParentTraceContext` on `ContinueAsNew` to bound per-generation traces (mints fresh W3C root when traced, honors opt-out when not; refs dapr/dapr#10064 with maintainer greenlight) `open`
 - [aaif-goose/goose#9473](https://github.com/aaif-goose/goose/pull/9473) — feat(server): paginate messages in GET /sessions/{session_id} (limit + offset, openapi + TS client regen) `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
 - [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
-- [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema `open`
 - [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
 - [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
 - [modelcontextprotocol/inspector#1580](https://github.com/modelcontextprotocol/inspector/pull/1580) — feat(client): add `credentials: 'include'` toggle for cookie-authenticated MCP servers (fixes #1454) `open`
@@ -32,9 +29,11 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 *Merged / adopted:*
+- [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema (merged 2026-07-09 by Siyet) `merged`
 - [modelcontextprotocol/rust-sdk#949](https://github.com/modelcontextprotocol/rust-sdk/pull/949) — fix(auth): preserve `refresh_token` when refresh response omits it (matches python-sdk#2270 fix; fixes #921, merged 2026-07-02 by @DaleSeo) `merged`
 - [0xPlaygrounds/rig#1990](https://github.com/0xPlaygrounds/rig/pull/1990) — fix(ollama): omit `think` when unset so the model default applies (fixes #1970, merged 2026-07-01 by @gold-silver-copper) `merged`
 - [vllm-project/aibrix#2296](https://github.com/vllm-project/aibrix/pull/2296) — fix(runtime): validate `lora_name` in `ArtifactDelegationService` to prevent path traversal in artifact loader (merged 2026-06-09 by Jeffwan) `merged`
+- [Kuadrant/mcp-gateway#925](https://github.com/Kuadrant/mcp-gateway/pull/925) — `fix(mcp-router)` make `ExtProcServer.RoutingConfig` swap race-free with `atomic.Pointer` (merged 2026-06-30 by Patryk-Stefanski) `merged`
 - [Kuadrant/mcp-gateway#924](https://github.com/Kuadrant/mcp-gateway/pull/924) — `fix(session)` bound `JWTManager.Terminate` cache deletion with a 5s timeout (merged 2026-06-11 by jasonmadigan) `merged`
 - [kagent-dev/kagent#1791](https://github.com/kagent-dev/kagent/pull/1791) — fix(controller): return error instead of panicking on unknown auth mode `merged`
 - [pepperoni21/ollama-rs#336](https://github.com/pepperoni21/ollama-rs/pull/336) — feat: add OllamaBuilder; deprecate host+port constructors `merged`
@@ -65,6 +64,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 *Past contributions:*
 - [aaif-goose/goose#10094](https://github.com/aaif-goose/goose/pull/10094) — feat(hooks): emit `ToolDefinitionChanged` on MCP tool schema drift + TOFU fingerprinting `closed by DOsinga — goose tracks the official agent-builders hooks standard; classifier belongs as a skill/plugin (see #9126)`
 - [Kuadrant/mcp-gateway#923](https://github.com/Kuadrant/mcp-gateway/pull/923) — `fix(broker)` take `RLock` in `findServerByName` and use `MCPName()` in log; closed 2026-06-11 because Aman-Cool's parallel fix had already landed on `main`. Same root cause; hardening direction acknowledged.
+- [kagent-dev/kagent#1786](https://github.com/kagent-dev/kagent/pull/1786) — fix(skills-init): install openssh-client so ssh-keyscan is available `closed unmerged`
 - [kagent-dev/kagent#1825](https://github.com/kagent-dev/kagent/pull/1825) — test(migrations): add data-preserving upgrade test for workload_type backfill `closed-stale by github-actions after 20 days inactivity`
 - [GitoxideLabs/gitoxide#2606](https://github.com/GitoxideLabs/gitoxide/pull/2606) — gix-url: accept `impl Into<&BStr>` in `parse` `closed by author — signature widening broke 34 downstream .into() callers; awaiting maintainer guidance on preferred shape`
 - [PrefectHQ/fastmcp#4172](https://github.com/PrefectHQ/fastmcp/pull/4172) — wrap pydantic ValidationError as fastmcp ValidationError `closed by maintainer — discussion-on-issue required first`
