@@ -15,7 +15,6 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
 - [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
 - [modelcontextprotocol/inspector#1580](https://github.com/modelcontextprotocol/inspector/pull/1580) — feat(client): add `credentials: 'include'` toggle for cookie-authenticated MCP servers (fixes #1454) `open`
-- [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag `open`
 - [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `open`
 - [DalgoT4D/webapp#1705](https://github.com/DalgoT4D/webapp/pull/1705) — fix: drop empty reader_options from source config `open`
 - [sktime/sktime-mcp#114](https://github.com/sktime/sktime-mcp/pull/114) — seasonality detection + structural break diagnostics for sktime's MCP layer `open`
@@ -62,6 +61,7 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [0xPlaygrounds/rig#1556](https://github.com/0xPlaygrounds/rig/issues/1556) — Chat trait `&mut Vec<Message>` round-trip (issue closed by maintainer's #1733) `fix adopted in maintainer's PR`
 
 *Past contributions:*
+- [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag `closed - the underlying issue #14249 was fixed upstream by #14812`
 - [aaif-goose/goose#10094](https://github.com/aaif-goose/goose/pull/10094) — feat(hooks): emit `ToolDefinitionChanged` on MCP tool schema drift + TOFU fingerprinting `closed by DOsinga — goose tracks the official agent-builders hooks standard; classifier belongs as a skill/plugin (see #9126)`
 - [Kuadrant/mcp-gateway#923](https://github.com/Kuadrant/mcp-gateway/pull/923) — `fix(broker)` take `RLock` in `findServerByName` and use `MCPName()` in log; closed 2026-06-11 because Aman-Cool's parallel fix had already landed on `main`. Same root cause; hardening direction acknowledged.
 - [kagent-dev/kagent#1786](https://github.com/kagent-dev/kagent/pull/1786) — fix(skills-init): install openssh-client so ssh-keyscan is available `closed unmerged`
