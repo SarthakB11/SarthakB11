@@ -6,7 +6,6 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 
 _Active:_
 
-- meshery/meshery — `utils.IsClosed` cleanup chain in `server/models`: [#19572](https://github.com/meshery/meshery/pull/19572) `[server]` fix `Broadcast` races + value-copy clobber + tests, [#19580](https://github.com/meshery/meshery/pull/19580) replace remaining `IsClosed` gates with non-blocking sends, [#19585](https://github.com/meshery/meshery/pull/19585) remove the helper itself, [#19643](https://github.com/meshery/meshery/pull/19643) init subscriber slices with `len=0` `4 PRs open`
 - [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions `open`
 - [kagent-dev/kagent#2134](https://github.com/kagent-dev/kagent/pull/2134) — fix(helm): unpin `runAsUser`/`runAsGroup` in `grafana-mcp` and `querydoc` subcharts so charts install under OpenShift restricted-v2 SCC (fixes #2079) `open`
 - [dapr/durabletask-go#113](https://github.com/dapr/durabletask-go/pull/113) — fix: reset `ParentTraceContext` on `ContinueAsNew` to bound per-generation traces (mints fresh W3C root when traced, honors opt-out when not; refs dapr/dapr#10064 with maintainer greenlight) `open`
@@ -30,6 +29,7 @@ _Active:_
 
 _Merged / adopted:_
 
+- meshery/meshery — `utils.IsClosed` cleanup + `Broadcast` race fixes ([#19572](https://github.com/meshery/meshery/pull/19572), [#19580](https://github.com/meshery/meshery/pull/19580), [#19585](https://github.com/meshery/meshery/pull/19585), [#19643](https://github.com/meshery/meshery/pull/19643)); the same fixes landed on master via the maintainer's rewrite [a03fd9a0](https://github.com/meshery/meshery/commit/a03fd9a0f070) (#20375) `fix adopted in maintainer's rewrite`
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema (merged 2026-07-09 by Siyet) `merged`
 - [modelcontextprotocol/rust-sdk#949](https://github.com/modelcontextprotocol/rust-sdk/pull/949) — fix(auth): preserve `refresh_token` when refresh response omits it (matches python-sdk#2270 fix; fixes #921, merged 2026-07-02 by @DaleSeo) `merged`
 - [0xPlaygrounds/rig#1990](https://github.com/0xPlaygrounds/rig/pull/1990) — fix(ollama): omit `think` when unset so the model default applies (fixes #1970, merged 2026-07-01 by @gold-silver-copper) `merged`
