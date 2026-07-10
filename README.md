@@ -4,7 +4,8 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 
 **Open source contributions**
 
-*Active:*
+_Active:_
+
 - meshery/meshery — `utils.IsClosed` cleanup chain in `server/models`: [#19572](https://github.com/meshery/meshery/pull/19572) `[server]` fix `Broadcast` races + value-copy clobber + tests, [#19580](https://github.com/meshery/meshery/pull/19580) replace remaining `IsClosed` gates with non-blocking sends, [#19585](https://github.com/meshery/meshery/pull/19585) remove the helper itself, [#19643](https://github.com/meshery/meshery/pull/19643) init subscriber slices with `len=0` `4 PRs open`
 - [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions `open`
 - [kagent-dev/kagent#2134](https://github.com/kagent-dev/kagent/pull/2134) — fix(helm): unpin `runAsUser`/`runAsGroup` in `grafana-mcp` and `querydoc` subcharts so charts install under OpenShift restricted-v2 SCC (fixes #2079) `open`
@@ -27,7 +28,8 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [PlanetRead/Video-Watch-Timer#6](https://github.com/PlanetRead/Video-Watch-Timer/pull/6) — dark mode theme support `open`
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
-*Merged / adopted:*
+_Merged / adopted:_
+
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema (merged 2026-07-09 by Siyet) `merged`
 - [modelcontextprotocol/rust-sdk#949](https://github.com/modelcontextprotocol/rust-sdk/pull/949) — fix(auth): preserve `refresh_token` when refresh response omits it (matches python-sdk#2270 fix; fixes #921, merged 2026-07-02 by @DaleSeo) `merged`
 - [0xPlaygrounds/rig#1990](https://github.com/0xPlaygrounds/rig/pull/1990) — fix(ollama): omit `think` when unset so the model default applies (fixes #1970, merged 2026-07-01 by @gold-silver-copper) `merged`
@@ -59,9 +61,10 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 - [tattle-made/feluda#589](https://github.com/tattle-made/feluda/pull/589) — unit tests for core operator `merged`
 - [Noethys/Noethys#84](https://github.com/Noethys/Noethys/pull/84) — SQL injection vulnerability fix `fixes adopted manually`
 - [0xPlaygrounds/rig#1556](https://github.com/0xPlaygrounds/rig/issues/1556) — Chat trait `&mut Vec<Message>` round-trip (issue closed by maintainer's #1733) `fix adopted in maintainer's PR`
+- [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag (maintainers shipped the same fix in #14812 after reviewing this PR) `fix adopted in maintainer-merged PR`
 
-*Past contributions:*
-- [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag `closed - the underlying issue #14249 was fixed upstream by #14812`
+_Past contributions:_
+
 - [aaif-goose/goose#10094](https://github.com/aaif-goose/goose/pull/10094) — feat(hooks): emit `ToolDefinitionChanged` on MCP tool schema drift + TOFU fingerprinting `closed by DOsinga — goose tracks the official agent-builders hooks standard; classifier belongs as a skill/plugin (see #9126)`
 - [Kuadrant/mcp-gateway#923](https://github.com/Kuadrant/mcp-gateway/pull/923) — `fix(broker)` take `RLock` in `findServerByName` and use `MCPName()` in log; closed 2026-06-11 because Aman-Cool's parallel fix had already landed on `main`. Same root cause; hardening direction acknowledged.
 - [kagent-dev/kagent#1786](https://github.com/kagent-dev/kagent/pull/1786) — fix(skills-init): install openssh-client so ssh-keyscan is available `closed unmerged`
