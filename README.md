@@ -15,15 +15,15 @@ _Active:_
 - [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
 - [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
 - [modelcontextprotocol/inspector#1580](https://github.com/modelcontextprotocol/inspector/pull/1580) — feat(client): add `credentials: 'include'` toggle for cookie-authenticated MCP servers (fixes #1454) `open`
-- [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `open`
 - [DalgoT4D/webapp#1705](https://github.com/DalgoT4D/webapp/pull/1705) — fix: drop empty reader_options from source config `open`
 - [sktime/sktime-mcp#114](https://github.com/sktime/sktime-mcp/pull/114) — seasonality detection + structural break diagnostics for sktime's MCP layer `open`
 - [sktime/sktime-mcp#347](https://github.com/sktime/sktime-mcp/pull/347) — map NaN/Inf to null in `sanitize_for_json` to keep tool responses JSON-safe `open`
-- [sktime/sktime#9876](https://github.com/sktime/sktime/issues/9876) — proposed MCP-native agentic estimator for forecasting pipeline selection `open`
-- [sktime/sktime#9846](https://github.com/sktime/sktime/issues/9846) — proposed agentic model selection benchmark `open`
+- [sktime/sktime-mcp#515](https://github.com/sktime/sktime-mcp/pull/515) — guard `sanitize_for_json` against circular references (fixes #189) `open`
 - shap/shap — type-annotation migration for [#3730](https://github.com/shap/shap/issues/3730) (`check_untyped_defs`): [#4445](https://github.com/shap/shap/pull/4445) `tf_utils` with `TFModel` Protocol, [#4760](https://github.com/shap/shap/pull/4760) `plots/_force`, [#4761](https://github.com/shap/shap/pull/4761) `maskers/_image`, [#4772](https://github.com/shap/shap/pull/4772) `plots/_force_matplotlib` `4 PRs open`
 - [pgmpy/pgmpy#2225](https://github.com/pgmpy/pgmpy/pull/2225) — timeseries conversion utilities bridging pgmpy ↔ sktime `open`
 - [DalgoT4D/DDP_backend#1037](https://github.com/DalgoT4D/DDP_backend/pull/1037) — Airbyte integration test suite `open`
+- [avantifellows/portal-backend#84](https://github.com/avantifellows/portal-backend/pull/84) — feat(rate-limit): SlowAPI rate limiting for critical routes (fixes #62) `open`
+- [avantifellows/portal-backend#83](https://github.com/avantifellows/portal-backend/pull/83) — fix(auth): raise HTTPException in create-access-token (fixes #60) `open`
 - [PlanetRead/Video-Watch-Timer#6](https://github.com/PlanetRead/Video-Watch-Timer/pull/6) — dark mode theme support `open`
 - [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
@@ -77,5 +77,8 @@ _Past contributions:_
 - [hynek/structlog#810](https://github.com/hynek/structlog/pull/810) — LogRecord.args timing in ProcessorFormatter `closed — supported path is pass_foreign_args=True`
 - [avantifellows/portal-backend#73](https://github.com/avantifellows/portal-backend/pull/73) — fix create-access-token route bug `closed — not reviewed`
 - [proteanhq/protean#504](https://github.com/proteanhq/protean/pull/504) — FastAPI server integration `closed — superseded by maintainer's version`
+- [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `closed by author — dbt-core's main moved to a Rust rewrite; the Python file this touched no longer exists on any actively-merged branch`
+- [sktime/sktime#9876](https://github.com/sktime/sktime/issues/9876) — proposed MCP-native agentic estimator for forecasting pipeline selection `closed by author — AutoResearchForecaster shipped via a separate issue thread, covering the same scope`
+- [sktime/sktime#9846](https://github.com/sktime/sktime/issues/9846) — proposed agentic model selection benchmark `closed by author — same reasoning, AutoResearchForecaster shipped`
 
 **Get in touch:** sarthak.bhardwaj21b@iiitg.ac.in
