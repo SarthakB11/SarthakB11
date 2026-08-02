@@ -6,15 +6,10 @@ I build ML tooling and contribute to open-source Python libraries in time-series
 
 _Active:_
 
-- [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions `open`
-- [kagent-dev/kagent#2134](https://github.com/kagent-dev/kagent/pull/2134) — fix(helm): unpin `runAsUser`/`runAsGroup` in `grafana-mcp` and `querydoc` subcharts so charts install under OpenShift restricted-v2 SCC (fixes #2079) `open`
 - [dapr/durabletask-go#113](https://github.com/dapr/durabletask-go/pull/113) — fix: reset `ParentTraceContext` on `ContinueAsNew` to bound per-generation traces (mints fresh W3C root when traced, honors opt-out when not; refs dapr/dapr#10064 with maintainer greenlight) `open`
-- [aaif-goose/goose#9473](https://github.com/aaif-goose/goose/pull/9473) — feat(server): paginate messages in GET /sessions/{session_id} (limit + offset, openapi + TS client regen) `open`
+- [aaif-goose/goose#10365](https://github.com/aaif-goose/goose/pull/10365) — feat(acp): paginate replayed messages in `load_session` (ACP-path successor to #9473, which died when the REST session endpoint was removed) `open`
 - [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
-- [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `open`
-- [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `open`
 - [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
-- [modelcontextprotocol/inspector#1580](https://github.com/modelcontextprotocol/inspector/pull/1580) — feat(client): add `credentials: 'include'` toggle for cookie-authenticated MCP servers (fixes #1454) `open`
 - [DalgoT4D/webapp#1705](https://github.com/DalgoT4D/webapp/pull/1705) — fix: drop empty reader_options from source config `open`
 - [sktime/sktime-mcp#114](https://github.com/sktime/sktime-mcp/pull/114) — seasonality detection + structural break diagnostics for sktime's MCP layer `open`
 - [sktime/sktime-mcp#347](https://github.com/sktime/sktime-mcp/pull/347) — map NaN/Inf to null in `sanitize_for_json` to keep tool responses JSON-safe `open`
@@ -24,11 +19,10 @@ _Active:_
 - [DalgoT4D/DDP_backend#1037](https://github.com/DalgoT4D/DDP_backend/pull/1037) — Airbyte integration test suite `open`
 - [avantifellows/portal-backend#84](https://github.com/avantifellows/portal-backend/pull/84) — feat(rate-limit): SlowAPI rate limiting for critical routes (fixes #62) `open`
 - [avantifellows/portal-backend#83](https://github.com/avantifellows/portal-backend/pull/83) — fix(auth): raise HTTPException in create-access-token (fixes #60) `open`
-- [PlanetRead/Video-Watch-Timer#6](https://github.com/PlanetRead/Video-Watch-Timer/pull/6) — dark mode theme support `open`
-- [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `open`
 
 _Merged / adopted:_
 
+- [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions (merged 2026-07-18 by yeasy) `merged`
 - meshery/meshery — `utils.IsClosed` cleanup + `Broadcast` race fixes ([#19572](https://github.com/meshery/meshery/pull/19572), [#19580](https://github.com/meshery/meshery/pull/19580), [#19585](https://github.com/meshery/meshery/pull/19585), [#19643](https://github.com/meshery/meshery/pull/19643)); the same fixes landed on master via the maintainer's rewrite [a03fd9a0](https://github.com/meshery/meshery/commit/a03fd9a0f070) (#20375) `fix adopted in maintainer's rewrite`
 - [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema (merged 2026-07-09 by Siyet) `merged`
 - [modelcontextprotocol/rust-sdk#949](https://github.com/modelcontextprotocol/rust-sdk/pull/949) — fix(auth): preserve `refresh_token` when refresh response omits it (matches python-sdk#2270 fix; fixes #921, merged 2026-07-02 by @DaleSeo) `merged`
@@ -80,5 +74,11 @@ _Past contributions:_
 - [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `closed by author — dbt-core's main moved to a Rust rewrite; the Python file this touched no longer exists on any actively-merged branch`
 - [sktime/sktime#9876](https://github.com/sktime/sktime/issues/9876) — proposed MCP-native agentic estimator for forecasting pipeline selection `closed by author — AutoResearchForecaster shipped via a separate issue thread, covering the same scope`
 - [sktime/sktime#9846](https://github.com/sktime/sktime/issues/9846) — proposed agentic model selection benchmark `closed by author — same reasoning, AutoResearchForecaster shipped`
+- [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `closed by maintainer — a follow-up bug report sat unaddressed for 2 weeks after several rounds of rebases/retests; real bug, successor PR not yet opened`
+- [modelcontextprotocol/inspector#1295](https://github.com/modelcontextprotocol/inspector/pull/1295) — fix(client): fully collapse Output Schema and Meta panels in ToolsTab `closed by maintainer — full v1-backlog security triage (125 PRs), v1 now frozen except genuine security fixes; not a rejection of the work`
+- [modelcontextprotocol/inspector#1580](https://github.com/modelcontextprotocol/inspector/pull/1580) — feat(client): add `credentials: 'include'` toggle for cookie-authenticated MCP servers (fixes #1454) `closed by maintainer — same v1-backlog triage sweep, declined on security grounds`
+- [PlanetRead/Video-Watch-Timer#6](https://github.com/PlanetRead/Video-Watch-Timer/pull/6) — dark mode theme support `closed by author — pinged reviewers twice over a year with no response, merge conflicts piled up; reopen invited`
+- [myhealthconnectsociety/project-healthcare#178](https://github.com/myhealthconnectsociety/project-healthcare/pull/178) — interface protocol fix (C4GT) `closed by author — 15 months of zero maintainer engagement beyond bots; reopen invited`
+- [kagent-dev/kagent#2134](https://github.com/kagent-dev/kagent/pull/2134) — fix(helm): unpin `runAsUser`/`runAsGroup` in `grafana-mcp`/`querydoc` subcharts (fixes #2079) `closed by stalebot — work was complete (safe pinned defaults kept, override documented, upstream issue opened for the real fix); asked maintainers to reopen`
 
 **Get in touch:** sarthak.bhardwaj21b@iiitg.ac.in
