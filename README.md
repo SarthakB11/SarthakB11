@@ -1,19 +1,14 @@
 ### Hi, I'm Sarthak
 
-I build ML tooling and contribute to open-source Python libraries in time-series forecasting, model interpretability, and data engineering.
+I build production AI agents and contribute to open-source AI infrastructure, MCP servers and SDKs, agent frameworks, and Python tooling.
 
 **Open source contributions**
 
 _Active:_
 
-- [dapr/durabletask-go#113](https://github.com/dapr/durabletask-go/pull/113) — fix: reset `ParentTraceContext` on `ContinueAsNew` to bound per-generation traces (mints fresh W3C root when traced, honors opt-out when not; refs dapr/dapr#10064 with maintainer greenlight) `open`
-- [aaif-goose/goose#10365](https://github.com/aaif-goose/goose/pull/10365) — feat(acp): paginate replayed messages in `load_session` (ACP-path successor to #9473, which died when the REST session endpoint was removed) `open`
-- [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858) `open`
-- [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `open`
+- [kagent-dev/doc2vec#94](https://github.com/kagent-dev/doc2vec/pull/94): mcp: run image as numeric non-root user `open`
 - [DalgoT4D/webapp#1705](https://github.com/DalgoT4D/webapp/pull/1705) — fix: drop empty reader_options from source config `open`
-- [sktime/sktime-mcp#114](https://github.com/sktime/sktime-mcp/pull/114) — seasonality detection + structural break diagnostics for sktime's MCP layer `open`
 - [sktime/sktime-mcp#347](https://github.com/sktime/sktime-mcp/pull/347) — map NaN/Inf to null in `sanitize_for_json` to keep tool responses JSON-safe `open`
-- [sktime/sktime-mcp#515](https://github.com/sktime/sktime-mcp/pull/515) — guard `sanitize_for_json` against circular references (fixes #189) `open`
 - shap/shap — type-annotation migration for [#3730](https://github.com/shap/shap/issues/3730) (`check_untyped_defs`): [#4445](https://github.com/shap/shap/pull/4445) `tf_utils` with `TFModel` Protocol, [#4760](https://github.com/shap/shap/pull/4760) `plots/_force`, [#4761](https://github.com/shap/shap/pull/4761) `maskers/_image`, [#4772](https://github.com/shap/shap/pull/4772) `plots/_force_matplotlib` `4 PRs open`
 - [pgmpy/pgmpy#2225](https://github.com/pgmpy/pgmpy/pull/2225) — timeseries conversion utilities bridging pgmpy ↔ sktime `open`
 - [DalgoT4D/DDP_backend#1037](https://github.com/DalgoT4D/DDP_backend/pull/1037) — Airbyte integration test suite `open`
@@ -22,9 +17,14 @@ _Active:_
 
 _Merged / adopted:_
 
+- [Leeroo-AI/kapso#137](https://github.com/Leeroo-AI/kapso/pull/137): fix: a horizontal rule in a card body no longer ends the body (fixes #133, merged 2026-10-16 by leeroo-coder) `merged`
+- [Lamatic/AgentKit#390](https://github.com/Lamatic/AgentKit/pull/390): feat: add terraform-plan-gate kit, a Lamatic flow that reviews a `terraform plan` and returns allow, needs-approval or block per resource (merged 2026-09-23 by akshatvirmani) `merged`
+- [ag2ai/faststream#2874](https://github.com/ag2ai/faststream/pull/2874) — fix(cli): surface YAML and AsyncAPI errors from `docs serve` (Sehat1137-invited redo of #2858, merged 2026-09-19 by Lancetnik) `merged`
+- [sktime/sktime-mcp#515](https://github.com/sktime/sktime-mcp/pull/515) — guard `sanitize_for_json` against circular references (fixes #189, squash-merged to main by Shashankss1205 on 2026-09-06 as [a26e3d1](https://github.com/sktime/sktime-mcp/commit/a26e3d13c5d630293e80c3b6e68de9b5ec55944c), so GitHub shows the PR as closed) `landed on main as a26e3d1`
+- [dapr/durabletask-go#113](https://github.com/dapr/durabletask-go/pull/113) — fix: reset `ParentTraceContext` on `ContinueAsNew` to bound per-generation traces (mints fresh W3C root when traced, honors opt-out when not; refs dapr/dapr#10064 with maintainer greenlight, merged 2026-08-03 by JoshVanL) `merged`
 - [hyperledger-cello/cello#788](https://github.com/hyperledger-cello/cello/pull/788) — ci: bump CI to Python 3.11 and refresh deprecated GitHub Actions (merged 2026-07-18 by yeasy) `merged`
 - meshery/meshery — `utils.IsClosed` cleanup + `Broadcast` race fixes ([#19572](https://github.com/meshery/meshery/pull/19572), [#19580](https://github.com/meshery/meshery/pull/19580), [#19585](https://github.com/meshery/meshery/pull/19585), [#19643](https://github.com/meshery/meshery/pull/19643)); the same fixes landed on master via the maintainer's rewrite [a03fd9a0](https://github.com/meshery/meshery/commit/a03fd9a0f070) (#20375) `fix adopted in maintainer's rewrite`
-- [jcrist/msgspec#1028](https://github.com/jcrist/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema (merged 2026-07-09 by Siyet) `merged`
+- [msgspec/msgspec#1028](https://github.com/msgspec/msgspec/pull/1028) — place null last in anyOf for optional unions in JSON schema (merged 2026-07-09 by Siyet) `merged`
 - [modelcontextprotocol/rust-sdk#949](https://github.com/modelcontextprotocol/rust-sdk/pull/949) — fix(auth): preserve `refresh_token` when refresh response omits it (matches python-sdk#2270 fix; fixes #921, merged 2026-07-02 by @DaleSeo) `merged`
 - [0xPlaygrounds/rig#1990](https://github.com/0xPlaygrounds/rig/pull/1990) — fix(ollama): omit `think` when unset so the model default applies (fixes #1970, merged 2026-07-01 by @gold-silver-copper) `merged`
 - [vllm-project/aibrix#2296](https://github.com/vllm-project/aibrix/pull/2296) — fix(runtime): validate `lora_name` in `ArtifactDelegationService` to prevent path traversal in artifact loader (merged 2026-06-09 by Jeffwan) `merged`
@@ -37,7 +37,6 @@ _Merged / adopted:_
 - [kagent-dev/kagent#1814](https://github.com/kagent-dev/kagent/pull/1814) — fix(cli): correct MCP secrets sync apply behavior and thread cobra ctx `merged`
 - [kagent-dev/kagent#1787](https://github.com/kagent-dev/kagent/pull/1787) — fix(app): wire signal-aware context through controller startup `merged`
 - [shap/shap#4436](https://github.com/shap/shap/pull/4436) — type annotations for `_random` (first step of [#3730](https://github.com/shap/shap/issues/3730) `check_untyped_defs` migration) `merged`
-- [shap/shap#4480](https://github.com/shap/shap/issues/4480) — filed: `type(x) is tuple` anti-pattern in gradient/deep explainers and partial_dependence (fixed via @neha222222's PR #4508, merged May 27) `fix adopted in maintainer-merged PR`
 - [python-poetry/poetry#10908](https://github.com/python-poetry/poetry/pull/10908) — fix(add): include pyproject.toml path in "already present" message `merged`
 - [python-poetry/poetry#10909](https://github.com/python-poetry/poetry/pull/10909) — fix(init): validate version constraint in interactive prompt `merged`
 - [ag2ai/ag2#2872](https://github.com/ag2ai/ag2/pull/2872) — docs: add Gemini and Azure OpenAI tabs to Quick Start `merged`
@@ -57,8 +56,21 @@ _Merged / adopted:_
 - [0xPlaygrounds/rig#1556](https://github.com/0xPlaygrounds/rig/issues/1556) — Chat trait `&mut Vec<Message>` round-trip (issue closed by maintainer's #1733) `fix adopted in maintainer's PR`
 - [OpenHands/OpenHands#14307](https://github.com/OpenHands/OpenHands/pull/14307) — fix(frontend): use onSelectionChange for Language dropdown dirty-flag (maintainers shipped the same fix in #14812 after reviewing this PR) `fix adopted in maintainer-merged PR`
 
+_Issues reported (recognized):_
+
+- [nirholas/XActions#35](https://github.com/nirholas/XActions/issues/35): [bug] CLI crashes at load: await in non-async SIGINT handler (owner confirmed the diagnosis, credited it and closed as resolved)
+- [sktime/sktime-mcp#189](https://github.com/sktime/sktime-mcp/issues/189): [BUG] sanitize_for_json crashes on circular references (RecursionError) (maintainer reproduced it on main, fixed by my #515, landed as a26e3d1)
+- [hyperledger-cello/cello#787](https://github.com/hyperledger-cello/cello/issues/787): ci: bump CI to Python 3.11 and refresh deprecated action versions (closed as completed by my #788, merged by yeasy)
+- [Noethys/Noethys#83](https://github.com/Noethys/Noethys/issues/83): Correction des vulnérabilités d'injection SQL dans GestionDB.py (owner integrated the fixes manually, see #84)
+- [sktime/sktime-mcp#191](https://github.com/sktime/sktime-mcp/issues/191): [BUG] Unlimited data handle accumulation: no size limit or eviction (closed as completed by my #273)
+- [shap/shap#4480](https://github.com/shap/shap/issues/4480): [BUG] Same `type(x) is tuple` anti-pattern as #4372 in gradient/deep explainers and partial_dependence plot (fixed by @neha222222's #4508, merged 2026-05-27 by CloseChoice)
+- [sktime/sktime-mcp#190](https://github.com/sktime/sktime-mcp/issues/190): [BUG] Inconsistent response format: validate_pipeline and catch-all missing `success` field (fixed in #217, closed as completed by Shashankss1205)
+
 _Past contributions:_
 
+- [aaif-goose/goose#10365](https://github.com/aaif-goose/goose/pull/10365) — feat(acp): paginate replayed messages in `load_session` (ACP-path successor to #9473, which died when the REST session endpoint was removed) `closed by DOsinga: the linked issue targeted the removed REST endpoint, and ACP load_session replay needs its own design`
+- [modelcontextprotocol/inspector#1296](https://github.com/modelcontextprotocol/inspector/pull/1296) — fix(server): redact sensitive env vars and headers from connection logs `closed by cliffhall after three review rounds: the leak was confirmed as legitimate, but deprecated v1 only takes high-severity security fixes`
+- [sktime/sktime-mcp#114](https://github.com/sktime/sktime-mcp/pull/114) — seasonality detection + structural break diagnostics for sktime's MCP layer `closed by Shashankss1205: the server was consolidated to 26 tools (#270) and maintainers prefer exposing sktime's own estimators over task-specific tools`
 - [aaif-goose/goose#10094](https://github.com/aaif-goose/goose/pull/10094) — feat(hooks): emit `ToolDefinitionChanged` on MCP tool schema drift + TOFU fingerprinting `closed by DOsinga — goose tracks the official agent-builders hooks standard; classifier belongs as a skill/plugin (see #9126)`
 - [Kuadrant/mcp-gateway#923](https://github.com/Kuadrant/mcp-gateway/pull/923) — `fix(broker)` take `RLock` in `findServerByName` and use `MCPName()` in log; closed 2026-06-11 because Aman-Cool's parallel fix had already landed on `main`. Same root cause; hardening direction acknowledged.
 - [kagent-dev/kagent#1786](https://github.com/kagent-dev/kagent/pull/1786) — fix(skills-init): install openssh-client so ssh-keyscan is available `closed unmerged`
@@ -71,7 +83,7 @@ _Past contributions:_
 - [hynek/structlog#810](https://github.com/hynek/structlog/pull/810) — LogRecord.args timing in ProcessorFormatter `closed — supported path is pass_foreign_args=True`
 - [avantifellows/portal-backend#73](https://github.com/avantifellows/portal-backend/pull/73) — fix create-access-token route bug `closed — not reviewed`
 - [proteanhq/protean#504](https://github.com/proteanhq/protean/pull/504) — FastAPI server integration `closed — superseded by maintainer's version`
-- [dbt-labs/dbt-core#12815](https://github.com/dbt-labs/dbt-core/pull/12815) — warn when load_result returns None during parse phase `closed by author — dbt-core's main moved to a Rust rewrite; the Python file this touched no longer exists on any actively-merged branch`
+- [dbt-labs/dbt#12815](https://github.com/dbt-labs/dbt/pull/12815) — warn when load_result returns None during parse phase `closed by author — dbt-core's main moved to a Rust rewrite; the Python file this touched no longer exists on any actively-merged branch`
 - [sktime/sktime#9876](https://github.com/sktime/sktime/issues/9876) — proposed MCP-native agentic estimator for forecasting pipeline selection `closed by author — AutoResearchForecaster shipped via a separate issue thread, covering the same scope`
 - [sktime/sktime#9846](https://github.com/sktime/sktime/issues/9846) — proposed agentic model selection benchmark `closed by author — same reasoning, AutoResearchForecaster shipped`
 - [aaif-goose/goose#9289](https://github.com/aaif-goose/goose/pull/9289) — fix(desktop): reuse existing window for recipe deep links `closed by maintainer — a follow-up bug report sat unaddressed for 2 weeks after several rounds of rebases/retests; real bug, successor PR not yet opened`
